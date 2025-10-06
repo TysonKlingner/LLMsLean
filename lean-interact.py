@@ -4,7 +4,6 @@ from pathlib import Path
 import re
 # Create a temporary project with Mathlib as a dependency
 project = TempRequireProject(
-    lean_version="v4.23.0",
     require=[
         LeanRequire(
             name="mathlib",
@@ -22,5 +21,5 @@ class eval:
 
         response = server.run(FileCommand(path=str(self.path)))
         self.response = response
-print(eval("/home/nerroth/project/hw1.lean").response)
+print(eval("hw1.lean").response)
 #%% 
