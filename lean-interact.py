@@ -4,6 +4,7 @@ from pathlib import Path
 import re
 # Create a temporary project with Mathlib as a dependency
 project = TempRequireProject(
+    lean_version="v4.23.0",
     require=[
         LeanRequire(
             name="mathlib",
